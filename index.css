@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: darkslateblue;
+}
+
+.container{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.container h2 img{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.text-Box{
+    background-color: #edeef0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input{
+    background-color: #edeef0;
+    border: none;
+    outline: none;
+    width: 400px;
+    border: none;
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: medium;
+}
+
+#add-btn{
+    background-color:dodgerblue;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#add-btn:hover{
+    background-color:darkblue;
+    cursor: pointer;
+    color: white;
+}
+
+.done-btn{
+    background-color:limegreen;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.done-btn:hover{
+    background-color:darkgreen;
+    cursor: pointer;
+    color: white;
+}
+
+#ul-li li .remove-btn{
+    background-color:red;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ul-li li .remove-btn:hover{
+    background-color:darkred;
+    cursor: pointer;
+    color: white;
+}
+
+#ul-li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#ul-li .list h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeef0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-decoration: line-through;
+}
+
+.listStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeef0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
