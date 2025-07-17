@@ -1,111 +1,153 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: darkslateblue;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: darkslateblue;
+  padding: 20px;
 }
 
-.container{
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 25px;
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 500px;
+  width: 100%;
 }
 
-.container h2 img{
-    width: 40px;
-    margin-left: 10px;
-    margin-top: 5px;
+.container h2 img {
+  width: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
-.text-Box{
-    background-color: #edeef0;
-    padding: 10px;
-    border-radius: 20px;
+.text-Box {
+  background-color: #edeef0;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-input{
-    background-color: #edeef0;
-    border: none;
-    outline: none;
-    width: 400px;
-    border: none;
-    padding-left: 15px;
-    font-weight: 100;
-    font-size: medium;
+input {
+  background-color: #edeef0;
+  border: none;
+  outline: none;
+  flex: 1 1 auto;
+  min-width: 200px;
+  padding: 10px 15px;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
-#add-btn{
-    background-color:dodgerblue;
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
+#add-btn {
+  background-color: dodgerblue;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
 }
 
-#add-btn:hover{
-    background-color:darkblue;
-    cursor: pointer;
-    color: white;
+#add-btn:hover {
+  background-color: darkblue;
+  cursor: pointer;
 }
 
-.done-btn{
-    background-color:limegreen;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
+.done-btn {
+  background-color: limegreen;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
 }
 
-.done-btn:hover{
-    background-color:darkgreen;
-    cursor: pointer;
-    color: white;
+.done-btn:hover {
+  background-color: darkgreen;
+  cursor: pointer;
 }
 
-#ul-li li .remove-btn{
-    background-color:red;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    text-decoration: none;
-    font-weight: bold;
+#ul-li li .remove-btn {
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
-#ul-li li .remove-btn:hover{
-    background-color:darkred;
-    cursor: pointer;
-    color: white;
+#ul-li li .remove-btn:hover {
+  background-color: darkred;
+  cursor: pointer;
 }
 
 #ul-li {
-    list-style: none;
-    padding: 10px;
-    border-radius: 20px;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 20px;
 }
 
-#ul-li .list h3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #edeef0;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    text-decoration: line-through;
+#ul-li .list h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edeef0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  text-decoration: line-through;
+  flex-wrap: wrap;
 }
 
-.listStyle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #edeef0;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+.listStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edeef0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .text-Box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  #add-btn {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .listStyle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #ul-li .list h3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
